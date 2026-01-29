@@ -16,8 +16,10 @@ public class AddFeedback {
         String comment = sc.nextLine();
 
         Feedback f = new Feedback(customerId, rating, comment);
-        FeedbackStore.feedbacks.add(f);
+//        FeedbackStore.feedbacks.add(f);
+        FeedbackStore.addFeedback(f);
 
-        System.out.println("✅ Feedback submitted successfully.");
+
+        System.out.println("Feedback submitted successfully.");
     }
 }

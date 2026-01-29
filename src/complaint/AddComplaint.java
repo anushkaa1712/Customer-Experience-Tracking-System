@@ -13,9 +13,10 @@ public class AddComplaint {
         String desc = sc.nextLine();
 
         Complaint c = new Complaint(count++, customerId, desc);
-        ComplaintStore.complaints.add(c);
+        ComplaintStore.addComplaint(c);
 
-        System.out.println("✅ Complaint added successfully.");
+
+        System.out.println(" Complaint added successfully.");
     }
 }
  
